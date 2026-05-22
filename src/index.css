@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -15,13 +16,18 @@
 
 html {
   scroll-behavior: smooth;
+  background: #fffcf8;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #fffcf8;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(243, 214, 200, 0.65), transparent 34rem),
+    radial-gradient(circle at bottom right, rgba(217, 167, 126, 0.22), transparent 30rem),
+    #fffcf8;
 }
 
 a {
@@ -37,4 +43,43 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+::selection {
+  background: #c9866a;
+  color: #ffffff;
+}
+
+.font-display {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.soft-pattern {
+  background-image:
+    linear-gradient(rgba(74, 46, 37, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(74, 46, 37, 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.card-hover {
+  transform: translateY(0);
+  transition:
+    transform 240ms ease,
+    box-shadow 240ms ease,
+    border-color 240ms ease,
+    background 240ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 70px rgba(74, 46, 37, 0.12);
+  border-color: rgba(201, 134, 106, 0.55);
+}
+
+.image-zoom {
+  transition: transform 700ms ease;
+}
+
+.group:hover .image-zoom {
+  transform: scale(1.06);
 }
