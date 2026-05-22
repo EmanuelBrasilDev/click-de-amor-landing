@@ -11,14 +11,14 @@ export function ConversionLinks() {
           </div>
 
           <p className="mt-6 text-sm font-extrabold uppercase tracking-[0.3em] text-[#D9A77E]">
-            Links de conversão
+            Links de conversao
           </p>
           <h2 className="font-display mt-3 text-4xl font-bold tracking-tight text-white md:text-5xl">
             Pronta para registrar seu momento?
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-[#F8E7DC]">
             Uma coluna simples, clara e otimizada para mobile. Depois trocamos
-            os links temporários por WhatsApp, Instagram, localização e pacotes.
+            os links temporarios por WhatsApp, Instagram, localizacao e pacotes.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function ConversionLinks() {
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
                   <ArrowRight
                     size={19}
-                    className="transition group-hover:translaté-x-1"
+                    className="transition group-hover:translate-x-1"
                   />
                 </div>
               </a>

@@ -2,7 +2,7 @@ import { services } from '../data/landingData'
 
 export function ServiceCards() {
   return (
-    <section id="portfólio" className="soft-pattern bg-[#FFF8F1] py-20">
+    <section id="portfolio" className="soft-pattern bg-[#FFF8F1] py-20">
       <div className="mx-auto max-w-6xl px-5 md:px-8 lg:px-4">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
@@ -15,8 +15,8 @@ export function ServiceCards() {
           </div>
 
           <p className="max-w-md text-base leading-8 text-[#8A6A5C]">
-            Cards visuais para apresentar os principais caminhos de conversão:
-            gestante, bebê e familia.
+            Cards visuais para apresentar os principais caminhos de conversao:
+            gestante, bebe e familia.
           </p>
         </div>
 

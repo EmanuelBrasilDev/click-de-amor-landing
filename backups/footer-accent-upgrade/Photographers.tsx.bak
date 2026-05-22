@@ -12,7 +12,7 @@ export function Photographers() {
           Quem registra o seu momento
         </h2>
         <p className="mt-5 text-base leading-8 text-[#8A6A5C]">
-          Duas fotógrafas conduzindo uma experiência leve, humana e acolhedora,
+          Duas fotografas conduzindo uma experiencia leve, humana e acolhedora,
           com cuidado nos detalhes e sensibilidade no olhar.
         </p>
       </div>
@@ -67,7 +67,7 @@ export function Photographers() {
                 className="group/link inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#F8E7DC] px-5 py-4 text-sm font-extrabold text-[#4A2E25] transition hover:bg-[#C9866A] hover:text-white"
               >
                 Falar com {person.name}
-                <MessageCircle size={18} className="transition group-hover/link:translaté-x-1" />
+                <MessageCircle size={18} className="transition group-hover/link:translate-x-1" />
               </a>
             </div>
           </article>

@@ -8,12 +8,12 @@ export function ProcessSteps() {
           Como funciona
         </p>
         <h2 className="font-display mt-3 text-4xl font-bold tracking-tight text-[#4A2E25] md:text-5xl">
-          Do primeiro contato até a entrega das fotos
+          Do primeiro contato ate a entrega das fotos
         </h2>
       </div>
 
       <div className="relative mt-14">
-        <div className="absolute left-1/2 top-0 hidden h-full w-px -translaté-x-1/2 bg-[#E8CFC2] md:block" />
+        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-[#E8CFC2] md:block" />
 
         <div className="grid gap-5 md:grid-cols-4">
           {steps.map((step, index) => {
