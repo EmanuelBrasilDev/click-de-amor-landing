@@ -1,104 +1,44 @@
-import { ArrowRight, Camera, Heart, MapPin, MessageCircle } from 'lucide-react'
+import { Camera, Heart } from 'lucide-react'
 import { brand } from '../data/landingData'
-
-const footerLinks = [
-  {
-    label: 'Agendar ensaio',
-    href: '#links',
-    icon: MessageCircle,
-  },
-  {
-    label: 'Ver ensaios',
-    href: '#portfolio',
-    icon: Camera,
-  },
-  {
-    label: 'Instagram',
-    href: 'https://www.instagram.com/clickdeamor2',
-    icon: Camera,
-  },
-  {
-    label: 'Localização',
-    href: '#links',
-    icon: MapPin,
-  },
-]
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#FFFCF8] px-5 py-14 text-[#4A2E25]">
+    <footer className="relative overflow-hidden bg-[#4A2E25] px-5 py-12 text-white">
       <div className="absolute inset-0">
-        <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-[#F3D6C8]/70 blur-3xl" />
-        <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-[#D9A77E]/30 blur-3xl" />
+        <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-[#C9866A]/20 blur-3xl" />
+        <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-[#D9A77E]/10 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-6xl">
-        <div className="grid gap-8 rounded-[36px] border border-[#E8CFC2] bg-white/80 p-6 shadow-2xl shadow-[#4A2E25]/8 backdrop-blur md:grid-cols-[1.1fr_0.9fr] md:p-8">
-          <section className="space-y-5">
-            <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#C9866A] text-white shadow-xl shadow-[#C9866A]/20">
-              <Heart size={24} fill="currentColor" />
-            </div>
+        <div className="flex flex-col items-center text-center">
+          <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#C9866A] text-white shadow-xl shadow-black/15">
+            <Heart size={24} fill="currentColor" />
+          </div>
 
-            <div>
-              <p className="font-display text-3xl font-bold text-[#4A2E25] md:text-4xl">
-                {brand.name}
-              </p>
+          <p className="font-display text-3xl font-bold text-white md:text-4xl">
+            {brand.name}
+          </p>
 
-              <p className="mt-2 text-sm font-bold uppercase tracking-[0.28em] text-[#C9866A]">
-                {brand.subtitle}
-              </p>
-            </div>
+          <p className="mt-2 text-sm font-bold uppercase tracking-[0.28em] text-[#F3C7AE]">
+            {brand.subtitle}
+          </p>
 
-            <p className="max-w-xl text-base leading-8 text-[#8A6A5C]">
-              {brand.slogan} Ensaios delicados para bebês, gestantes e famílias,
-              com uma experiência leve, acolhedora e cheia de cuidado.
-            </p>
+          <p className="mt-5 max-w-xl text-base leading-8 text-[#F8E7DC]">
+            {brand.slogan}
+          </p>
 
-            <a
-              href="#links"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#C9866A] px-6 py-4 text-sm font-extrabold text-white shadow-xl shadow-[#C9866A]/20 transition hover:-translate-y-0.5 hover:bg-[#B8735A]"
-            >
-              Quero agendar meu ensaio
-              <ArrowRight size={18} className="transition group-hover:translate-x-1" />
-            </a>
-          </section>
-
-          <section className="grid gap-3 sm:grid-cols-2 md:self-center">
-            {footerLinks.map((item) => {
-              const Icon = item.icon
-
-              return (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  target={item.href.startsWith('http') ? '_blank' : undefined}
-                  rel={item.href.startsWith('http') ? 'noreferrer' : undefined}
-                  className="group flex items-center gap-3 rounded-[22px] border border-[#E8CFC2] bg-[#FFFCF8] p-4 shadow-sm transition hover:-translate-y-1 hover:border-[#C9866A]/60 hover:bg-[#F8E7DC]"
-                >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#F8E7DC] text-[#C9866A] transition group-hover:bg-[#C9866A] group-hover:text-white">
-                    <Icon size={20} />
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-extrabold text-[#4A2E25]">
-                      {item.label}
-                    </p>
-                    <p className="mt-1 text-xs font-medium text-[#8A6A5C]">
-                      Acesso rápido
-                    </p>
-                  </div>
-                </a>
-              )
-            })}
-          </section>
+          <div className="mt-8 flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-5 py-3 text-sm text-[#F8E7DC]/80">
+            <Camera size={16} className="text-[#F3C7AE]" />
+            Ensaios delicados para bebês, gestantes e famílias.
+          </div>
         </div>
 
-        <div className="mt-7 flex flex-col items-center justify-between gap-4 border-t border-[#E8CFC2] pt-6 text-center md:flex-row md:text-left">
-          <p className="text-sm text-[#8A6A5C]">
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-center md:flex-row md:text-left">
+          <p className="text-sm text-[#F8E7DC]/75">
             © {new Date().getFullYear()} {brand.name}. Todos os direitos reservados.
           </p>
 
-          <p className="rounded-full border border-[#E8CFC2] bg-white/70 px-4 py-2 text-xs text-[#8A6A5C]">
+          <p className="text-xs text-[#F8E7DC]/55">
             Versão inicial com imagens e links temporários.
           </p>
         </div>
